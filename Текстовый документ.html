@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Машина  </title> 
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    background: #bfe7ff;
+}
+.car {
+    width: 200px;
+    height: 60px;
+    background: red;
+}
+.car {
+position: absolute;
+bottom: 50px;
+left: 0;
+}
+.car{
+    transform: translateX(-200px);
+}
+@keyframes drive {
+from {
+    transform: translateX(-200px);
+     }
+    to {
+        transform: translateX(calc(100vw - 200px - 50px));
+       }
+}
+.car {
+    animation: drive 2.5s ease-out forwards;
+     }
+.car {
+    border-radius: 15px;
+     }
+.car::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: black;
+    border-radius: 50%;
+    bottom: -20px;
+    left: 30px;
+}
+.car::after {
+    content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: black;
+  border-radius: 50%;
+  bottom: -20px;
+  right: 30px;
+}
+.car {
+  background:
+    linear-gradient(#aee7ff, #aee7ff) 60px 10px / 80px 25px no-repeat,
+    red;
+}
+</style>
+</head> 
+
+<body>  
+    <div class="car"></div>
+</body>
